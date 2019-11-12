@@ -1,0 +1,32 @@
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" language="javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" class="init">
+
+    $(document).ready(function() {
+        $('#table_id').DataTable( {
+            "ajax":  "bugy#2.txt"
+        } );
+    } );
+  </script>
+</head>
+
+
+<table id = "table_id" border="1" class="display">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>LDAvis Topic</th>
+      <th>Top Words</th>
+      <th>Gensim Topic</th>
+      <th>Document</th>
+      <th>Post_id</th>
+      <th>Post's top comment</th>
+      <th>Relevant Top Comment</th>
+    </tr>
+  </thead>
+</table>
